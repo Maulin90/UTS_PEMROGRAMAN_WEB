@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Girls Company Clothes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="register.js" defer></script> 
+    <style>
+        body {
+            background-image: url('Background/bg_utama.png');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        .form-container {
+            background-image: url('Background/bg_utama.png');
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .form-title {
+            color: #343a40;
+        }
+        #error-message {
+            color: red;
+            margin-top: 10px;
+        }
+        #register-button:hover {
+            background-color: #ffc0cb;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="form-container">
+                    <h2 class="text-center form-title mb-4">Daftar Girls Company Clothes</h2>
+                    <!-- Form dengan validasi JavaScript -->
+                    <form onsubmit="return validateRegister(event)">
+                        <div class="mb-3">
+                            <label for="fullname" class="form-label">Full Name:</label>
+                            <input type="text" id="fullname" name="fullname" class="form-control" required placeholder="Masukkan nama lengkap Anda" autofocus>
+                        </div>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username:</label>
+                            <input type="text" id="username" name="username" class="form-control" required placeholder="Masukkan username Anda">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" id="email" name="email" class="form-control" required placeholder="Masukkan email Anda">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password:</label>
+                            <input type="password" id="password" name="password" class="form-control" required placeholder="Masukkan password Anda">
+                        </div>
+                        <!-- Area pesan error -->
+                        <div id="error-message"></div>
+                        <button type="submit" class="btn btn-secondary w-100" id="register-button">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
