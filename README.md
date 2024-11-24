@@ -13,9 +13,7 @@ Jika pengguna menekan button "Informasi Selengkapnya", pengguna akan diarahkan k
 Halaman detail berisi informasi tentang perusahaan dan layanan yang disediakan.
    
 ## Sistem Login dan Registrasi:
-1. Login:
-
-Halaman login untuk autentikasi pengguna.
+1. Login: Halaman login untuk autentikasi pengguna.
 Validasi data login dilakukan menggunakan JavaScript.
 
 Data login yang valid:
