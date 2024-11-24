@@ -1,21 +1,39 @@
 # Girls Company Clothes Website
-Aplikasi hanya sampai menu utama dan saat mengklik button lihat detail, 
-maka akan pindah ke halamam detail informasi dimana isinya tentang perusahaan dan layanan perusahaan.
+Girls Company Clothes adalah sebuah website yang menampilkan informasi tentang perusahaan dan layanan yang disediakan. 
+Aplikasi ini juga dilengkapi dengan sistem login dan registrasi menggunakan validasi berbasis JavaScript. 
+Aplikasi hanya sampai menu utama dan saat mengklik button lihat detail, maka akan pindah ke halamam detail informasi dimana isinya tentang perusahaan dan layanan perusahaan.
 
 ## Halaman Utama:
+Deskripsi Utama:
 1. Menampilkan halaman utama mengenai Girls Company Clothes.
-2. Berisi informasi general Girls Company Clothes.
-3. Jika menekan button informasi selengkapnya, akan mengarah ke alaman detail.
-4. Halaman detail berisi tentang perusahaan dan layanan yang ada di perusahaan.
+2. Berisi informasi umum tentang perusahaan, visi, misi, koleksi produk, dan ulasan pelanggan.
+
+Navigasi ke Halaman Detail:
+Jika pengguna menekan button "Informasi Selengkapnya", pengguna akan diarahkan ke halaman detail.
+Halaman detail berisi informasi tentang perusahaan dan layanan yang disediakan.
    
 ## Sistem Login dan Registrasi:
-1. Halaman login untuk autentikasi pengguna.
-2. Halaman registrasi untuk pendaftaran pengguna baru.
+1.Login:
 
-## Koneksi Database:
-1. Database SQL yang berisi tabel_users untuk autentikasi.
+Halaman login untuk autentikasi pengguna.
+Validasi data login dilakukan menggunakan JavaScript.
+Data login yang valid:
+Email: nendamaulinkurniati@gmail.com
+Password: 123456
+Jika login berhasil, pengguna akan diarahkan ke halaman menu utama.
+
+Registrasi:
+Halaman registrasi untuk pendaftaran pengguna baru.
+
+Validasi form registrasi meliputi:
+1. Semua field wajib diisi.
+2. Format email yang valid.
+3. Panjang username antara 3-15 karakter.
+4. Password minimal 6 karakter.
+5. Setelah registrasi berhasil, pengguna akan diarahkan ke halaman login.
 
 ## Tools: 
 1. Menggunakan Bootstrap CDN, pastikan memakai koneksi internet.
-2. XAMPP untuk menyimpan database (db_user).
+2. Validasi data pada sistem login dan registrasi dilakukan dengan JavaScript.
+3. Sistem redirect menggunakan window.location.href.
 3. Gambar-gambar yang ada di folder Background.
