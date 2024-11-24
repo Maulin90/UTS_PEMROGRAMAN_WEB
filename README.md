@@ -17,6 +17,7 @@ Halaman detail berisi informasi tentang perusahaan dan layanan yang disediakan.
 Validasi data login dilakukan menggunakan JavaScript.
 
 Data login yang valid:
+
 Email: nendamaulinkurniati@gmail.com
 
 Password: 123456
